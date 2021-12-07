@@ -5,167 +5,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./styles/sass/main.css">
     <title>HTML-CSS</title>
   </head>
   
   <body>
-    <!-- Header Section -->
-    <header class="header">
-      <div class="header__info">
-        <h1 class="header__text1">Tarefas a Fazer</h1>
-        <h2 class="header__text2">Adicione e complete tarefas para organizar melhor a sua semana</h3>
-      <div>  
-    </header>
+      <!-- Header Section -->
+      <div class="container">
+        <picture>
+          <source media="(max-width:360px)" srcset="./images/header-bg-mobile.png">
+          <source srcset="./images/header-bg-desktop.png">
+            <img src="./images/header-bg-desktop.png" alt="Header background" style="width:auto;">
+        </picture>
+        <h1 class="container__title">Tarefas a fazer</h1>
+        <p class="container__subtitle">Adicione e complete tarefas para organizar melhor a sua semana. :)</p>
+      </div>
+      <!-- Main Section -->
+        <!-- Box Section -->
+      <main class="main">
+        <div class="searchbox">
+          <div class="searchbox__input-wrapper">
+            <p class="searchbox__input" placeholder="Busque Tarefas">Busque Tarefas</p>
+              <button class="searchbox__button">Buscar</button>
+            </input> 
+          </div>
 
-    <!-- Main Section -->
-
-      <!-- Box Section -->
-    <main class="main">
-      <div class="main__box">
-        <div class="main__search">
-          <input class="search__txt" placeholder="Busque Tarefas">
-          <button class="search__button">Buscar</button>
-          </input> 
+          <div class="searchbox__filter-wrapper">
+            <p class="searchbox__text">Organizar por:</p>
+            <div class="searchbox__deadline">
+             <p class="searchbox__date">Prazo 
+               <img class="searchbox__selector" src="images/select-icon.png">
+              </p>
+            </div>  
+              
+            
+          </div>    
         </div>
+        <!-- Card Section -->
+        <div class="cards-section">
+          <div class="cards-section__container">  
+            <div class="cards">
+              
+                <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+                </div>
 
-        <div class="main__organize">
-          <p class="organize__txt">Organizar por:</p>
-          <input class="organize__selector" placeholder="Prazo" disabled>
-            <select disabled></select>
-          </input>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-section__container">  
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div> 
+            <div class="cards">
+              <div class="cards__content">
+                <div class="cards__picture">  
+                  <img src="./images/card-bg-mobile.png" class="card__image">
+                </div> 
+                
+                <div class="cards__description">
+                  <h2 class="cards__title">
+                    Nome da tarefa
+                    <img class="card__icon" src="./images/watch-icon.png">
+                  </h2>
+                  <h4 class="cards__subtitle">Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.</h4>
+                  <h2 class="cards__deadline">
+                    <h1 class="cards__text">Prazo:</h1>
+                    <h1 class="cards__date">00/00</h1>
+                  </h2>
+                  <button class="cards__button">
+                    <h4 class="cards__button-text">Concluir</h4>
+                  </button>
+                  <h4 class="cards__input-date">Data de Inclusão: há 2 semanas</h4>
+                </div>
+              </div>
+            </div>
+          </div>   
+        </div>   
+        <button class="cards__button-extend">
+          <h4 class="cards__extend-text">VER MAIS +</h4>
+        </button>      
+        <!-- linx Section -->    
+        <section class="section">
+          <img class="section__logo" src= "images/linx-bg-mobile.png">
+            <div class="section__text-style">
+              <p class="section__text">A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.</p>
+              <p class="section__text">Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.</p>
+              <p class="section__text">Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.</p>
+            </div>  
+        </section>
+      </main>
+        <!-- Footer Section -->
+      <footer class="footer">
+        <div class="footer__text-style">
+          <p class="footer__text">Testando suas habilidades em HTML e CSS.</p>  
+          <p class="footer__text">Linx Impulse 2021</p> 
+          <p class="footer__text">Teste ficcional!</p> 
         </div>    
-      </div>
-
-      <!-- Card Section -->
-      <div class="main__cards">
-    
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa  **inserir Etiqueta</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa ** possui altura maior que os demais</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-          <div class="card__buttons">  
-            <button class="button__confirm">Concluir</button>
-            <button class="button__change">Alterar prazo</button> 
-          </div>  
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa  **inserir etiqueta</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <div class="card">
-          <img class="card__image"></img>
-          <p class="card__title">Nome da Tarefa</p>
-          <p class="card__description">
-            Descrição da tarefa, o que deve ser feito e muitas informações que explicam melhor do que se trata.
-          </p>
-          <p class="card__deadline">Prazo</p>
-          <p class="card__date">Data de inclusão: 2 semanas</p>
-        </div>
-
-        <p class="card__more">VER MAIS +</p>
-      
-      
-      
-      </div>
-
-      <!-- Register Section -->
-      <div class="main__register">
-        <p class="resgiter__text">Quer receber dicas para organizar melhor a sua rotina? Cadstre-se</p>
-        <div class="register__components">
-          <div class="register__name">
-            <p class="name__text">nome</p>
-            <input class="input__text" placeholder="Digite seu nome"></input>
-          </div>
-
-          <div class="register__email">
-            <p class="email__text">e-mail<p>
-            <input class="input__email" placeholder="Digite seu e-mail"></input>    
-          </div>
-
-          <button>Cadastrar</button>
-        </div>  
-
-      </div>
-
-      <!-- linx Section -->    
-      <section class="main__section">
-        <img class="section__logo">linx logo</img>
-        <p class="section__text">A Linx é uma empresa brasileira especialista em tecnologia para o varejo. Líder no mercado de software de gestão, com 45,6% de market share do mercado varejista, conforme atesta o IDC.
-          Toda a expertise da Linx na jornada de compra é transformada em insights fundamentais para atingir o que os varejistas mais esperam: fidelizar seus consumidores e atingir resultados concretos e relevantes.
-          Com capital aberto na B3 desde 2013, a Linx também se tornou a primeira empresa brasileira de software com capital aberto na NYSE, em 2019. A empresa possui mais de 3,5 mil colaboradores distribuídos entre sua sede em São Paulo, 15 filiais pelo Brasil e 5 países da América. Para saber mais, acesse linx.com.br/imprensa.</p>
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-      <p class="footer__text">
-        Testando suas habilidades em HTML e CSS. 
-        Linx Impulse 2021
-        Teste ficcional!
-      </p>    
-    </footer>
-
+      </footer>
   </body>
 </html>
